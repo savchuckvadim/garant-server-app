@@ -1,0 +1,52 @@
+.dealPush__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+}
+
+
+
+.dealButtons__container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content:end;
+    align-items: center;
+
+}
+
+.addDeal__btn, .cancelDeal__btn{
+    margin-left: 3vh !important;
+    height: 45px !important;
+    width: 165px !important;
+    background: rgb(231, 53, 74);
+    background-color: rgb(231, 53, 74);
+    color: rgb(255, 255, 255) !important;
+}
+.addDeal__btn{
+
+    background: linear-gradient(45deg, rgb(127, 21, 137) 0%, rgb(192, 213, 235) 50%, rgb(61, 45, 233) 100%);
+    font-size: large;
+    animation: gradient 7s ease infinite;
+    background-size: 1500% 1500%;
+   
+}
+
+@keyframes gradient{
+ 
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+.cancelDeal__btn{
+    background-color: rgb(231, 53, 74) !important;
+    color: rgb(255, 255, 255) !important;
+}

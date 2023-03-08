@@ -1,0 +1,80 @@
+.region__container{
+    min-width: 100%;
+    min-height: 100vh;
+    /* margin: 25px; */
+    
+    background: rgb(198,176,200);
+    background: linear-gradient(45deg, rgba(198,176,200,1) 0%, rgba(138,90,162,1) 50%, rgb(255, 34, 196) 100%);
+    font-size: large;
+    animation: gradient 7s ease infinite;
+    background-size: 1500% 1500%;
+    color: rgb(255, 255, 255);
+}
+
+@keyframes gradient{
+ 
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+.region__main{
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.regionMenu{
+    width: 80%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: rgb(255, 255, 255);
+   
+    border-radius: 16px;
+    border: 1px solid;
+}
+.region__buttonWrapper
+{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.region__button{
+    width: 150px;
+    height: 40px;
+    background: rgb(246, 233, 243);
+ 
+    color: rgb(0, 0, 0);
+    border: 0.5px solid rgb(164, 7, 255);
+    border-radius: 10px;
+    cursor: pointer;
+    font-style: bold !important;
+    font-size: 15px !important;
+
+    font-weight: 400 !important;
+    line-height: 22px !important;
+    letter-spacing: -0.3px !important;
+   
+}
+.region__button:hover{
+    background: rgba(72, 143, 237, 0.33);
+    background: linear-gradient(45deg, rgba(198,176,200,1) 0%, rgb(119, 76, 237) 50%, rgb(108, 192, 241) 100%);
+    font-size: large;
+    animation: gradient 5s ease infinite;
+    background-size: 1500% 1500%;
+    color: rgb(255, 255, 255);
+}

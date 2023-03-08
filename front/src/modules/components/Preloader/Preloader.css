@@ -1,0 +1,48 @@
+.preloader__container{
+    min-width: 100%;
+    min-height: 100vh;
+    /* margin: 25px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(198,176,200);
+    background: linear-gradient(45deg, rgba(198,176,200,1) 0%, rgba(138,90,162,1) 50%, rgb(255, 34, 196) 100%);
+    font-size: large;
+    animation: gradient 7s ease infinite;
+    background-size: 5000% 5000%;
+    color: rgb(255, 255, 255);
+}
+
+@keyframes gradient{
+ 
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+.logoWrapper{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(255, 255, 255);
+    /* background: linear-gradient(45deg, rgb(13, 0, 255) 0%, rgb(255, 255, 255) 50%, rgb(255, 34, 196) 100%);
+    font-size: large;
+    animation: gradient 9s ease infinite;
+    background-size: 1500% 1500%;
+    color: rgb(255, 255, 255); */
+    border-radius: 50%;
+    border: 1px solid;
+}
+.logo{
+    display: block;
+    height: 80%;
+    width: 80%;
+}
